@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio Doces</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .item {
+      background: #fff2e6;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .info {
+      text-align: center;
+      padding: 10px;
+    }
+    .info h2 {
+      font-size: 18px;
+      color: #d35400;
+    }
+    .info p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    button {
+      background: #d35400;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b84300;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cardápio de Doces</h1>
+  <div class="menu">
+
+    <div class="item">
+      <img src="copo-da-felicidade-red-velvet.png" alt="Copo da Felicidade">
+      <div class="info">
+        <h2>Copo da Felicidade</h2>
+        <p>R$ 18,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_da_Felicidade" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+    <div class="item">
+      <img src="tortinha-de-morango.png" alt="Tortinha de Morango">
+      <div class="info">
+        <h2>Tortinha</h2>
+        <p>R$ 15,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Tortinha_de_Morango" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+    <div class="item">
+      <img src="torta-holandesa.png" alt="Torta Holandesa">
+      <div class="info">
+        <h2>Torta (fatia)</h2>
+        <p>R$ 12,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Torta_Holandesa" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+    <div class="item">
+      <img src="bolo-de-pote.png" alt="Bolo de Pote">
+      <div class="info">
+        <h2>Bolo de Pote</h2>
+        <p>R$ 12,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Bolo_de_Pote" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+    <div class="item">
+      <img src="pave-de-morango.png" alt="Pavê de Morango">
+      <div class="info">
+        <h2>Pavê</h2>
+        <p>R$ 15,00</p>
+       <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Pave_de_Morango" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+    <div class="item">
+      <img src="morango-do-amor.png" alt="Morango do amor">
+      <div class="info">
+        <h2>Morango do amor</h2>
+        <p>R$ 15,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Morango_do_amor" target="_blank">
+  <button>Pedir</button>
+</a>
+    </div>
+
+  </div>
+
+  <script>
+    function enviarWhatsApp(produto) {
+      const numero = '5521997563011'; // exemplo: 559999999999
+      const mensagem = `Olá! Gostaria de pedir o ${produto}.`;
+      window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
