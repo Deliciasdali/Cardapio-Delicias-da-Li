@@ -1,3 +1,236 @@
 git add index.html
 git commit -m "Atualiza visual do cardápio"
 git push origin main
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio Doces</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .item {
+      background: #fff2e6;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .info {
+      text-align: center;
+      padding: 10px;
+    }
+    .info h2 {
+      font-size: 18px;
+      color: #d35400;
+    }
+    .info p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    button {
+      background: #d35400;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b84300;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cardápio de Doces</h1>
+  <div class="menu">
+
+    <!-- Banoffee -->
+    <div class="item">
+      <img src="banoffee.png" alt="Banoffee">
+      <div class="info">
+        <h2>Banoffee</h2>
+        <p>R$ 16,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Banoffee" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bolo de Pote -->
+    <div class="item">
+      <img src="bolo-de-pote.png" alt="Bolo de Pote">
+      <div class="info">
+        <h2>Bolo de Pote</h2>
+        <p>R$ 12,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Bolo_de_Pote" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bolo Dois Amores -->
+    <div class="item">
+      <img src="bolo-de-pote-doisamores.png" alt="Bolo Dois Amores">
+      <div class="info">
+        <h2>Bolo Dois Amores</h2>
+        <p>R$ 13,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Bolo_Dois_Amores" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bolo Vulcão -->
+    <div class="item">
+      <img src="bolo-vulcao.png" alt="Bolo Vulcão">
+      <div class="info">
+        <h2>Bolo Vulcão</h2>
+        <p>R$ 17,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Bolo_Vulcao" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Copo Frutoso -->
+    <div class="item">
+      <img src="copo-da-felicidade-frutoso.png" alt="Copo Morango e Uva">
+      <div class="info">
+        <h2>Copo Morango e Uva</h2>
+        <p>R$ 18,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_Morango_e_Uva" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Kinder Bueno -->
+    <div class="item">
+      <img src="copo-da-felicidade-kinderbueno.png" alt="Copo Kinder Bueno">
+      <div class="info">
+        <h2>Copo Kinder Bueno</h2>
+        <p>R$ 20,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_Kinder_Bueno" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- KitKat -->
+    <div class="item">
+      <img src="copo-da-felicidade-kitkat.png" alt="Copo KitKat">
+      <div class="info">
+        <h2>Copo KitKat</h2>
+        <p>R$ 20,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_KitKat" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Morango & Browne -->
+    <div class="item">
+      <img src="copo-da-felicidade-moranbrowne.png" alt="Copo Morango e Browne">
+      <div class="info">
+        <h2>Copo Morango e Browne</h2>
+        <p>R$ 18,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_Morango_e_Browne" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Uva & Browne -->
+    <div class="item">
+      <img src="copo-da-felicidade-uvabrowne.png" alt="Copo Uva e Browne">
+      <div class="info">
+        <h2>Copo Uva e Browne</h2>
+        <p>R$ 18,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Copo_Uva_e_Browne" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Escondidinho -->
+    <div class="item">
+      <img src="escondidinho-de-browne.png" alt="Escondidinho de Browne">
+      <div class="info">
+        <h2>Escondidinho</h2>
+        <p>R$ 14,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Escondidinho_de_Browne" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Morango do Amor -->
+    <div class="item">
+      <img src="morango-do-amor.png" alt="Morango do Amor">
+      <div class="info">
+        <h2>Morango do Amor</h2>
+        <p>R$ 15,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Morango_do_Amor" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Torta Cookie -->
+    <div class="item">
+      <img src="torta-cookie.png" alt="Torta Cookie">
+      <div class="info">
+        <h2>Torta Cookie</h2>
+        <p>R$ 17,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Torta_Cookie" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Tortinha de Limão -->
+    <div class="item">
+      <img src="tortinha-de-limao.png" alt="Tortinha de Limão">
+      <div class="info">
+        <h2>Tortinha de Limão</h2>
+        <p>R$ 12,00</p>
+        <a href="https://wa.me/5521997563011?text=PEDIDO_CARDAPIO_Tortinha_de_Limao" target="_blank">
+          <button>Pedir</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  git add .
+git commit -m "Atualiza cardápio com novos produtos"
+git push origin main
+
+
+</body>
+</html>
